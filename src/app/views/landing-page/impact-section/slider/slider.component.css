@@ -1,0 +1,18 @@
+:host ::ng-deep .p-slider .p-slider-range{
+  background: black;
+}
+
+:host ::ng-deep .p-slider-handle {
+  border-color: black;
+}
+
+:host ::ng-deep .p-slider .p-slider-handle:hover {
+  border-color: black;
+  background: black;
+}
+
+:host ::ng-deep .p-slider .p-slider-handle:focus {
+  border-color: black;
+  box-shadow: none;
+  background: black;
+}

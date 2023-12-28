@@ -1,0 +1,41 @@
+<div class="row custom-container justify-content-center align-items-center">
+  <div class="col-md-6">
+    <div class="container mx-auto">
+      <div class="fs-1 fw-bold">
+        The results <br />
+        speak for themselves.
+      </div>
+      <p class="fs-4 mt-3 fw-normal">
+        Your savings journey got easier, because it's not just about saving it's
+        about building a brighter future💡.
+      </p>
+    </div>
+  </div>
+  <div class="col-md-6 card p-4">
+    <div class="container mx-auto">
+      <div class="row">
+        <p class="fs-5 text-center mb-4">HOW MUCH COULD YOU SAVE?</p>
+      </div>
+      <div class="row">
+        <div class="div">
+          <div class="">
+            <app-slider></app-slider>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <p class="fs-1 fw-bold text-center mt-3">
+          ₹{{ minSavings | commaSeparated }} - ₹{{
+            maxSavings | commaSeparated
+          }}
+        </p>
+      </div>
+      <div class="row">
+        <p class="fs-5 text-center fw-semibold">EST. SAVINGS PER MONTH</p>
+      </div>
+      <div class="row">
+        <button class="btn btn-dark btn-lg">Start now</button>
+      </div>
+    </div>
+  </div>
+</div>
