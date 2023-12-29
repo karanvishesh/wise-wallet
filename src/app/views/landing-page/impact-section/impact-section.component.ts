@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { SliderComponent } from './slider/slider.component';
 import { RevenueService } from '../../../services/revenue.service';
-import { CommaSeparatedPipe } from '../../../utils/comma-seperated.pipe';
+import { CommaSeparatedPipe } from '../../../utils/pipes/comma-seperated.pipe';
 
 @Component({
   selector: 'app-impact-section',

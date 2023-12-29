@@ -3,7 +3,7 @@ import { SliderModule } from 'primeng/slider';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RevenueService } from '../../../../services/revenue.service';
-import { CommaSeparatedPipe } from '../../../../utils/comma-seperated.pipe';
+import { CommaSeparatedPipe } from '../../../../utils/pipes/comma-seperated.pipe';
 
 @Component({
   selector: 'app-slider',
