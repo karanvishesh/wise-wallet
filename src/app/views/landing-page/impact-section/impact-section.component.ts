@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { SliderComponent } from './slider/slider.component';
 import { RevenueService } from '../../../services/revenue.service';
 import { CommaSeparatedPipe } from '../../../utils/pipes/comma-seperated.pipe';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { LoginPageComponent } from '../../shared/login-page/login-page.component';
 
 @Component({
   selector: 'app-impact-section',
@@ -15,6 +17,7 @@ export class ImpactSectionComponent {
   savingsPercentage: number = 20;
   minSavings: number = 1600;
   maxSavings: number = 2400;
+  private modalService = inject(NgbModal);
 
   constructor(private revenueService: RevenueService) {
     this.revenueService.getRevenue().subscribe((revenue: number) => {
@@ -41,4 +44,9 @@ export class ImpactSectionComponent {
     this.minSavings = Math.round(savings * 0.8);
     this.maxSavings = Math.round(savings * 1.2);
   }
+
+	open() {
+		const modalRef = this.modalService.open(LoginPageComponent);
+		modalRef.componentInstance.name = 'World';
+	}
 }
