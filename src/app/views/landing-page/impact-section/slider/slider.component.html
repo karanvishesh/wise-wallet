@@ -1,0 +1,16 @@
+<!-- Your component's template file -->
+
+<div class="flex justify-content-center">
+  <div class="slider-label start-label mb-4 fw-semibold fs-5">Your monthly income : {{ '₹ ' + revenue | commaSeparated }}</div>
+  <p-slider [(ngModel)]="value" [min]="minValue" [max]="maxValue" (onChange)="onInputChange($event)" [step]="1000" (onSlideEnd)="onSlideEnd($event)" [ngStyle]="{ 'background-color': 'black!important' }"></p-slider>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="slider-label start-label mt-2 fs-5">{{ '₹ ' + minValue | commaSeparated }}</div>
+    </div>
+    <div class="col-md-6">
+      <div class="slider-label end-label mt-2 fs-5 justify-content-end text-end">{{ '₹ ' + maxValue | commaSeparated }}</div>
+    </div>
+  </div>
+
+</div>

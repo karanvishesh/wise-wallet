@@ -1,0 +1,12 @@
+/* Your component's CSS file */
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+.container {
+  max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+/* Add more styles as needed for your design */
